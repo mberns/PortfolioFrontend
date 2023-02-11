@@ -1,0 +1,43 @@
+* {
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    background-color: lightskyblue;
+}
+
+#logo1 {
+    background-color: lightpink;
+}
+
+#logo2 {
+    background-color: orange;
+}
+
+#banner {
+    background-color: lightgreen;
+}
+
+#acerca-de {
+    background-color:lightgray;
+}
+
+#experiencia {
+    background-color: gray;
+}
+
+#educacion {
+    background-color:lightgray;
+}
+
+#hard-and-soft-skills {
+    background-color: gray;
+}
+
+#proyectos {
+    background-color:lightgray;
+}
+
+#login {
+    background-color: gray;
+}
