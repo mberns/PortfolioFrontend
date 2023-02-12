@@ -1,13 +1,46 @@
 * {
     font-family: 'Open Sans', sans-serif;
+    margin: 0;
 }
 
 body {
     background-color: lightskyblue;
 }
 
+.container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    max-width: 1400px;
+    margin: auto;
+}
+
+header .container  { /*me separa las cajitas pero mal distribuidas*/
+    justify-content:space-evenly;
+}
+
+
+h1 {
+    font-size: 2rem;
+    font-weight: 300;
+    text-align: center;
+    color: deeppink; /*poner otro rosado, este no es, pero bueno*/
+}
+
+#banner h1 {
+    color: snow;
+}
+
+#logo1b {
+    background-color:snow;
+    font-weight: 700;
+    color:deepskyblue;
+}
+
 #logo1 {
-    background-color: lightpink;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
 
 #logo2 {
@@ -19,25 +52,55 @@ body {
 }
 
 #acerca-de {
-    background-color:lightgray;
+    background-color:snow;
 }
 
 #experiencia {
-    background-color: gray;
+    background-color:lightgrey;
 }
 
 #educacion {
-    background-color:lightgray;
+    background-color:snow;
 }
 
 #hard-and-soft-skills {
-    background-color: gray;
+    background-color: lightgray;
 }
 
 #proyectos {
-    background-color:lightgray;
+    background-color:snow;
 }
 
 #login {
-    background-color: gray;
+    background-color: lightgray;
+}
+
+footer {
+    background-color: hotpink;
+}
+
+button {
+    background-color: rgb(255, 175, 218);
+    color: snow;
+    border-radius: 5px;
+    border: 1px solid snow;
+    padding: 7px 12px 7px 12px;
+    /* padding: 10px 7px 10px 7px; */
+}
+
+/*cuando al boton le paso por encima con el cursor pasa esto*/
+button:hover { 
+    background-color:hotpink;
+}
+
+ul {
+    list-style: none;
+}
+
+
+#banner h2{
+    font-weight: 300;
+    font-size: 1.5rem;
+    text-align: center;
+    color: snow;
 }
