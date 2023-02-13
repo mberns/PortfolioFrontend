@@ -64,7 +64,14 @@ h1 {
     justify-content: center;
     text-align: center;
     flex-direction: column;/*me pone los titulos uno debajo del otro*/
-    background-image: url('imgs/img_banner.jpg'); /*no me carga la img, por que ?*/
+    background-image: linear-gradient(
+        0deg,
+        hotpink 5%,
+        rgba(255,175,218, 0.3)
+
+    )
+    ,url("imgs/img6.jpg"); /*como le cambio el tamaño a la img desde aca? es posible?*/
+    
 }
 
 #acerca-de {
