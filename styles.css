@@ -4,7 +4,8 @@
 }
 
 body {
-    background-color: lightskyblue;
+    /* background-color: lightskyblue; */
+    background-color: snow;
 }
 
 .container {
@@ -15,8 +16,10 @@ body {
     margin: auto;
 }
 
-header .container  { /*me separa las cajitas pero mal distribuidas*/
-    justify-content:space-evenly;
+header .container  { /*los conatainers del header (los hijos, no solo los directos, todos)*/
+    /* justify-content:space-evenly; */
+    justify-content:space-around;
+    background-color: snow;
 }
 
 
@@ -27,63 +30,83 @@ h1 {
     color: deeppink; /*poner otro rosado, este no es, pero bueno*/
 }
 
-#banner h1 {
+#banner h1 { /*primero el padre, despues el hijo*/
     color: snow;
 }
 
 #logo1b {
-    background-color:snow;
     font-weight: 700;
     color:deepskyblue;
 }
 
-#logo1 {
+#logo1 {/*encierra al logo0 y al logo 1b*/
     display: flex;
     flex-direction: row;
     align-items: center;
+    margin: 0;
+    padding: 10px 10px;/*arriba&abajo - costados-> no me cambia en nada porque esta centrado*/
 }
 
 #logo2 {
-    background-color: orange;
+    color: black;
+    font-weight: 700;
 }
 
 #banner {
     background-color: lightgreen;
+    padding: 10px; /*le pongo esto porque sino me deja un espacio entre secciones*/
+    height: 80vh;
+    /* width: 80%; -> si pongo esto no se como centrarlo despues */
+    margin: 0px 100px;
+    display: flex;
+    /*no entiendo bien la diferencia entre los 3 que siguen*/
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;/*me pone los titulos uno debajo del otro*/
+    background-image: url('imgs/img_banner.jpg'); /*no me carga la img, por que ?*/
 }
 
 #acerca-de {
     background-color:snow;
+    padding: 10px; /*lo mismo*/
 }
 
 #experiencia {
     background-color:lightgrey;
+    padding: 10px; /*se lo agrego a todos asi queda parejo*/
 }
 
 #educacion {
     background-color:snow;
+    padding: 10px;
 }
 
 #hard-and-soft-skills {
     background-color: lightgray;
+    padding: 10px;
 }
 
 #proyectos {
     background-color:snow;
+    padding: 10px;
 }
 
 #login {
     background-color: lightgray;
+    padding: 10px;
 }
 
 footer {
     background-color: hotpink;
+    padding: 10px;
 }
 
 button {
     background-color: rgb(255, 175, 218);
     color: snow;
     border-radius: 5px;
-    border: 1px solid snow;
+    border: 1px solid black;
     padding: 7px 12px 7px 12px;
     /* padding: 10px 7px 10px 7px; */
 }
